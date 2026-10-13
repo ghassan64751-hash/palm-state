@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f2e9">
+<meta name="description" content="أصدر هويتك وصوّت وانتخب في مجتمع افتراضي">
+<title>دولة النخيل</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0f3d2e;--g2:#1a6048;--gold:#c9a24a;--cream:#f6f2e9;--ink:#17261f;--mut:#66766d;--line:#e3dccb;--card:#fffdf8}
+*{box-sizing:border-box;margin:0}
+body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;background:var(--cream);color:var(--ink);padding-bottom:88px;min-height:100vh;line-height:1.7}
+h1,h2,h3,.k{font-family:'Reem Kufi','IBM Plex Sans Arabic',sans-serif;font-weight:700}
+a,button,input,.file{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;padding-top:max(10px,env(safe-area-inset-top));background:rgba(246,242,233,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.brand{display:flex;gap:10px;align-items:center;color:var(--g);text-decoration:none;line-height:1.3}
+.brand small,.idh small{display:block;font-size:11px;color:var(--mut);font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:400}
+.em{width:38px;height:38px;color:var(--gold);background:var(--g);border-radius:50%;padding:4px;flex:none}
+.chip{padding:7px 14px;border:1px solid var(--line);border-radius:99px;background:#fff;color:var(--g);font-size:14px;font-weight:500;text-decoration:none;max-width:44vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+main{max-width:560px;margin:0 auto;padding:16px}
+.hero{background:radial-gradient(circle at 80% 0,#1f6a50 0,transparent 60%),var(--g);color:#efe6cc;border-radius:28px;padding:34px 24px 28px;text-align:center}
+.hero .em{width:88px;height:88px;margin:0 auto 14px;background:none;border:2px solid var(--gold);padding:10px;display:block}
+.hero h1{font-size:44px;line-height:1.2;color:var(--gold)}
+.hero p{margin-top:10px;font-size:15px}
+.hero .motto{font-family:'Reem Kufi',sans-serif;color:var(--gold);margin-top:18px;font-size:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;margin-top:14px}
+.links a{display:flex;gap:14px;align-items:center;text-decoration:none;color:inherit}
+.links h3{font-size:20px;color:var(--g)}
+.links p,.sub{color:var(--mut);font-size:14px}
+.ic{width:46px;height:46px;border-radius:14px;background:var(--g);color:var(--gold);display:grid;place-items:center;flex:none}
+.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.top{display:flex;gap:14px;align-items:center}
+.top h2{font-size:28px;color:var(--g);line-height:1.2}
+.idc{margin-top:16px;border-radius:20px;padding:14px 16px;color:#eee5cb;background:repeating-radial-gradient(circle at 15% 130%,transparent 0 9px,rgba(201,162,74,.09) 9px 10px),linear-gradient(135deg,#0f3d2e,#1a6048);border:1px solid var(--gold);box-shadow:0 14px 30px -14px rgba(15,61,46,.6)}
+.idh{display:flex;gap:10px;align-items:center;padding-bottom:10px;border-bottom:1px solid rgba(201,162,74,.5);color:var(--gold);line-height:1.3}
+.idh .em{width:34px;height:34px;background:none;border:1.5px solid var(--gold);padding:3px}
+.idh small{color:#cdd8c8}
+.flag{width:34px;height:20px;margin-top:10px;border-radius:2px;background:linear-gradient(#c9a24a 0 33%,#f6f2e9 33% 66%,#0b2a20 66%)}
+.idb{display:flex;gap:14px;justify-content:space-between;align-items:center;margin-top:8px}
+.idb dl{flex:1;min-width:0}
+.idb dt{font-size:11px;color:#b9c8bd;margin-top:6px}
+.idb dd{font-size:15px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dts{display:flex;gap:18px}
+.ph{width:92px;height:116px;border-radius:12px;border:2px solid var(--gold);background:#efe3c3;color:var(--g);display:grid;place-items:center;overflow:hidden;flex:none}
+.ph span{font-size:40px}.ph img{width:100%;height:100%;object-fit:cover}
+.mrz{direction:ltr;margin-top:12px;font:11px/1 monospace;letter-spacing:.5px;color:#9db2a5;white-space:nowrap;overflow:hidden}
+form h3,.card>h3{font-size:19px;color:var(--g)}
+label{display:block;margin-top:14px;font-weight:600;font-size:14px;color:var(--g)}
+input[type=text]{display:block;width:100%;margin-top:6px;padding:13px 14px;border:1px solid var(--line);border-radius:14px;background:#fff;font:inherit;color:var(--ink)}
+.file{display:block;margin-top:6px;padding:13px;border:1.5px dashed #cdbf98;border-radius:14px;text-align:center;color:var(--mut);font-weight:500;cursor:pointer}
+.btn{display:block;width:100%;margin-top:18px;padding:14px;border:0;border-radius:14px;background:var(--g);color:#f3ead2;font:600 16px 'IBM Plex Sans Arabic',sans-serif;cursor:pointer}
+.ghost{display:block;margin:12px auto 0;background:none;border:0;color:#9a3b2f;font:500 14px 'IBM Plex Sans Arabic',sans-serif;cursor:pointer}
+.note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#efe3c3;color:#5b4a1c;font-size:14px}
+.note a{color:var(--g);font-weight:600}
+.tag{display:inline-block;padding:2px 12px;border-radius:99px;background:#efe3c3;color:#6b5516;font-size:12px;font-weight:600}
+.card h3.q{margin-top:8px;font-size:19px;line-height:1.6}
+.opt{position:relative;display:flex;justify-content:space-between;align-items:center;width:100%;margin-top:10px;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:#fff;font:inherit;color:inherit;text-align:start;cursor:pointer;overflow:hidden}
+.opt i{position:absolute;inset-block:0;inset-inline-start:0;background:#dbe9de;transition:width .5s}
+.opt span,.opt b{position:relative}
+.opt small{display:block;color:var(--mut);font-size:12px}
+.opt.sel{border-color:var(--gold)}
+.opt:disabled{cursor:default}
+.foot{margin-top:12px;font-size:13px;color:var(--mut)}
+nav{position:fixed;bottom:0;inset-inline:0;display:flex;gap:4px;background:var(--card);border-top:1px solid var(--line);padding:8px 8px max(8px,env(safe-area-inset-bottom))}
+nav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;font-size:12px;color:var(--mut);text-decoration:none;padding:6px 2px;border-radius:16px}
+nav a.on{background:#efe3c3;color:var(--g);font-weight:600}
+#toast{position:fixed;inset-inline:0;bottom:96px;margin:auto;width:max-content;max-width:90vw;padding:10px 18px;border-radius:99px;background:var(--g);color:#f3ead2;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s}
+#toast.on{opacity:1}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="em" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="45"/><path d="M50 12l8 15 17-5-5 17 15 8-15 8 5 17-17-5-8 15-8-15-17 5 5-17-15-8 15-8-5-17 17 5z"/><path d="M50 66V47M50 47c-6 0-11-4-12-9M50 47c6 0 11-4 12-9M50 47c-5-4-12-4-17 0M50 47c5-4 12-4 17 0"/></g></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4zM10 20v-6h4v6"/></symbol>
+<symbol id="i-id" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM8 11.5a1.8 1.8 0 100-.01M5.5 16c.5-2 4.5-2 5 0M13 10h5M13 14h5"/></symbol>
+<symbol id="i-vote" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM9 12l2.2 2.2L15 10"/></symbol>
+<symbol id="i-elect" viewBox="0 0 24 24"><path d="M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></symbol>
+</svg>
+
+<header>
+  <a class="brand" href="#home"><svg class="em"><use href="#em"/></svg><span class="k">دولة النخيل<small>بوابة المواطن الرقمية</small></span></a>
+  <a class="chip" id="chip" href="#id">إصدار هوية</a>
+</header>
+<main id="app"></main>
+<nav id="nav"></nav>
+<div id="toast" role="status"></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const nf=n=>Number(n).toLocaleString('ar-EG');
+const ad=s=>String(s).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+let me=store.get('me',null),votes=store.get('votes',{}),pend={};
+
+const POLLS=[
+ {id:'p1',q:'هل توافق على جعل يوم الخميس إجازة وطنية؟',opts:[{t:'أوافق',base:640},{t:'لا أوافق',base:90},{t:'محايد',base:210}]},
+ {id:'p2',q:'ما أولى أولويات الدولة هذا العام؟',opts:[{t:'التعليم',base:310},{t:'البيئة',base:260},{t:'الاقتصاد',base:180}]}
+];
+const ELECTIONS=[
+ {id:'e1',q:'انتخاب رئيس المجلس',opts:[
+  {t:'سلمى الخالدي',s:'مدن خضراء لكل مواطن',base:420},
+  {t:'ماجد الراشد',s:'اقتصاد رقمي مفتوح',base:380},
+  {t:'نورة السالم',s:'تعليم مجاني للجميع',base:450}]}
+];
+const NAV=[['home','الرئيسية'],['id','هويتي'],['vote','التصويت'],['elect','الانتخابات']];
+
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove('on'),2200)};
+const gen=()=>String(Math.floor(1e9+Math.random()*9e9));
+const dstr=y=>{const d=new Date();d.setFullYear(d.getFullYear()+y);return ad(`${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`)};
+const ico=n=>`<svg class="i"><use href="#i-${n}"/></svg>`;
+
+const cardHTML=c=>`<div class="idc">
+ <div class="idh"><svg class="em"><use href="#em"/></svg><span class="k">دولة النخيل<small>بطاقة الهوية الوطنية الرقمية</small></span></div>
+ <div class="flag"></div>
+ <div class="idb"><dl>
+  <dt>الاسم الكامل</dt><dd>${esc(c.name||'—')}</dd>
+  <dt>رقم الهوية</dt><dd>${ad(c.num)}</dd>
+  <div class="dts"><div><dt>تاريخ الإصدار</dt><dd>${c.issue}</dd></div><div><dt>تاريخ الانتهاء</dt><dd>${c.exp}</dd></div></div>
+ </dl><div class="ph">${c.photo?`<img src="${c.photo}" alt="">`:`<span class="k">${esc(((c.name||'').trim()[0])||'؟')}</span>`}</div></div>
+ <div class="mrz">PLM&lt;&lt;${c.num}&lt;&lt;CITIZEN&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</div></div>`;
+
+const home=()=>`<section class="hero"><svg class="em"><use href="#em"/></svg>
+ <h1>دولة النخيل</h1>
+ <p>بوابتك إلى مجتمع افتراضي: أصدر هويتك، وشارك في القرارات، وانتخب من يمثلك.</p>
+ <p class="motto">لكل مواطن صوت واحد</p></section>
+ <div class="links">${[['id','هويتي','أصدر بطاقتك باسمك وصورتك.'],['vote','التصويت','شارك برأيك في قرارات الدولة.'],['elect','الانتخابات','اختر من يمثلك في المجلس.']].map(([r,t,d])=>`<a class="card" href="#${r}"><span class="ic">${ico(r)}</span><span><h3>${t}</h3><p>${d}</p></span></a>`).join('')}</div>`;
+
+const ident=()=>`<div class="top"><span class="ic">${ico('id')}</span><div><h2>هويتي</h2><p class="sub">بطاقة الهوية الرسمية</p></div></div>
+ <div id="card"></div>
+ <form class="card" id="f"><h3>${me?'تحديث الهوية':'إصدار هوية جديدة'}</h3>
+ <label>الاسم الكامل<input type="text" id="nm" maxlength="30" required autocomplete="name" value="${esc(me?.name||'')}"></label>
+ <label>الصورة الشخصية<span class="file" id="fl">اختر صورة</span><input type="file" id="pf" accept="image/*" hidden></label>
+ <button class="btn">${me?'حفظ التعديلات':'إصدار الهوية'}</button>
+ ${me?'<button type="button" class="ghost" id="del">حذف الهوية</button>':''}</form>`;
+
+const choice=(it,kind)=>{
+ const v=votes[it.id],done=v!==undefined,cnt=it.opts.map((o,i)=>o.base+(v===i?1:0)),tot=cnt.reduce((a,b)=>a+b,0);
+ return `<article class="card"><span class="tag">${done?'تم تسجيل صوتك':'مفتوح للتصويت'}</span><h3 class="q">${it.q}</h3>`
+ +it.opts.map((o,i)=>{const p=Math.round(cnt[i]/tot*100);return `<button class="opt${v===i?' sel':''}" data-id="${it.id}" data-i="${i}"${done?' disabled':''}>${done?`<i style="width:${p}%"></i>`:''}<span>${o.t}${o.s?`<small>${o.s}</small>`:''}</span>${done?`<b>${nf(p)}%</b>`:''}</button>`}).join('')
+ +(done?`<p class="foot">إجمالي الأصوات: ${nf(tot)}</p>`:'')+`</article>`};
+
+const gate=()=>me?'':'<p class="note">أصدر <a href="#id">هويتك</a> أولاً لتتمكن من التصويت.</p>';
+const vote=()=>`<div class="top"><span class="ic">${ico('vote')}</span><div><h2>التصويت</h2><p class="sub">قرارات الدولة بين يديك</p></div></div>${gate()}${POLLS.map(choice).join('')}`;
+const elect=()=>`<div class="top"><span class="ic">${ico('elect')}</span><div><h2>الانتخابات</h2><p class="sub">اختر من يمثلك في الدولة</p></div></div><p class="note">لديك صوت واحد فقط في كل انتخاب، فاختر مرشحك بعناية.</p>${gate()}${ELECTIONS.map(choice).join('')}`;
+const R={home,id:ident,vote,elect};
+
+function prev(){
+ const c=me||{};pend.num=c.num||pend.num||gen();
+ $('#card').innerHTML=cardHTML({name:$('#nm').value.trim()||c.name,photo:pend.photo??c.photo,num:pend.num,issue:c.issue||dstr(0),exp:c.exp||dstr(5)});
+}
+const shrink=f=>new Promise(r=>{const i=new Image();i.onload=()=>{const k=Math.min(1,240/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);URL.revokeObjectURL(i.src);r(c.toDataURL('image/jpeg',.8))};i.src=URL.createObjectURL(f)});
+
+function bindId(){
+ prev();
+ $('#nm').addEventListener('input',prev);
+ $('#pf').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;pend.photo=await shrink(f);$('#fl').textContent='تم اختيار الصورة';prev()});
+ $('#f').addEventListener('submit',e=>{e.preventDefault();
+  me={name:$('#nm').value.trim(),photo:pend.photo??me?.photo??null,num:pend.num,issue:me?.issue||dstr(0),exp:me?.exp||dstr(5)};
+  store.set('me',me);pend={};toast(me.issue?'تم إصدار الهوية':'');render()});
+ $('#del')?.addEventListener('click',()=>{if(!confirm('حذف الهوية وأصواتك من هذا الجهاز؟'))return;me=null;votes={};store.set('me',null);store.set('votes',{});pend={};render()});
+}
+
+function render(){
+ const r=(location.hash||'#home').slice(1),k=R[r]?r:'home';
+ $('#app').innerHTML=R[k]();
+ $('#nav').innerHTML=NAV.map(([n,t])=>`<a href="#${n}"${n===k?' class="on"':''}>${ico(n)}${t}</a>`).join('');
+ $('#chip').textContent=me?me.name:'إصدار هوية';
+ if(k==='id')bindId();
+}
+$('#app').addEventListener('click',e=>{
+ const b=e.target.closest('.opt');if(!b||b.disabled)return;
+ if(!me){toast('أصدر هويتك أولاً');location.hash='#id';return}
+ votes[b.dataset.id]=+b.dataset.i;store.set('votes',votes);toast('تم تسجيل صوتك');render();
+});
+addEventListener('hashchange',()=>{pend={};render();scrollTo(0,0)});
+render();
+</script>
+</body>
+</html>
